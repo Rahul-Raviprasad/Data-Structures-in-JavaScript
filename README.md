@@ -6,7 +6,7 @@ But I would to like to point to few resources(there are many more but these are 
 
 I highly recommend this book **[Data Structures and Algorithms Using Java‐ Script by Michael McMillian (O’Reilly). Copyright 2014 Michael McMillan][1]**
 
-[1]: https://github.com/oreillymedia/data_structures_and_algorithms_using_javascript "DSA"
+[1]: "http://shop.oreilly.com/product/0636920029557.do" "DSA"
 
 **[Data Structures lectures by Naveen Garg- Videos (NPTEL)][2]**
 
