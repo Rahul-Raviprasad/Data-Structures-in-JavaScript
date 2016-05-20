@@ -1,0 +1,3 @@
+/*
+Arrays are the most commonly used data structure in JS.
+*/
