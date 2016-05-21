@@ -247,10 +247,18 @@ reverse
 sort // good for strings but bad for numbers
 The sort() function sorts data lexicographically, assuming the data elements are strings,
 
+//iterator functions that don't return new array
 forEach
 every
 some
 reduce
+reduceRight
+
+//Iterator functions which return a new array
+map
+filter
+
+2D Array and jagged array
 
 
 */
