@@ -151,3 +151,106 @@ console.log("I want to access index 2: " + patterns[2]);
 for(var i = 0; i < patterns.length; i++) {
   console.log("pattern at index i = "+ i + ": " + patterns[i]);
 }
+
+//Shallow vs Deep copy of Arrays
+/* Since we know that Arrays are internally objects in JS, and when we
+copy arrays like var newArr = existingArr; , we are basically passing the reference
+to the existingArr. This results in Shallow Copy, That is if newArr is modified
+it affects the existingArr as well.
+ */
+//Example
+console.log("Shallow copy of Arrays :---");
+var vehicles = ["car", "bike", "ship"];
+var newVehicles = [];
+newVehicles = vehicles;
+console.log("vehicle before changing the copied array: " + vehicles);
+newVehicles[0] = "Aeroplane";
+console.log("vehicle after changing copied array: " + vehicles);
+console.log("newVehicles after changing : " + newVehicles);
+
+// This can introduce bugs in programs if the intention was to do a Deep copy
+//Examples
+function copy(arr1, arr2) {
+  for (var i = 0; i < arr1.length; ++i) {
+    arr2[i] = arr1[i];
+  }
+}
+console.log("Deep copy of Arrays :---");
+var vehicles = ["car", "bike", "ship"];
+var newVehicles = [];
+copy(vehicles, newVehicles);
+console.log("vehicle before changing the copied array: " + vehicles);
+newVehicles[0] = "Aeroplane";
+console.log("vehicle after changing copied array: " + vehicles);
+console.log("newVehicles after changing : " + newVehicles);
+
+
+//Array.prototype.indexOf()
+
+/*
+The indexOf() method returns the first index at which a given
+element can be found in the array, or -1 if it is not present.
+
+Syntax
+arr.indexOf(searchElement[, fromIndex = 0])
+
+Parameters
+
+searchElement: Element to locate in the array.
+fromIndex: The index to start the search at.
+If the index is greater than or equal to the array's length, -1 is returned,
+which means the array will not be searched.
+If the provided index value is a negative number, it is taken as the offset
+from the end of the array. Note: if the provided index is negative,
+the array is still searched from front to back.
+If the calculated index is less than 0, then the whole array will be searched.
+Default: 0 (entire array is searched).
+
+Description
+indexOf() compares searchElement to elements of the Array using strict equality
+(the same method used by the === or triple-equals operator).
+*/
+//Examples
+
+var array = [2, 9, 9];
+console.log("Array for indexOf example: " + array);
+console.log("array.indexOf(2): " + array.indexOf(2));     // 0
+console.log("array.indexOf(7): " + array.indexOf(7));     // -1
+console.log("array.indexOf(9, 2): " + array.indexOf(9, 2));  // 2
+console.log("array.indexOf(2, -1): " + array.indexOf(2, -1)); // -1
+console.log("array.indexOf(2, -3): " + array.indexOf(2, -3)); // 0
+
+
+//Array.prototype.lastIndexOf
+
+/*The lastIndexOf() method returns the last index at which a given element
+can be found in the array, or -1 if it is not present.
+The array is searched backwards, starting at fromIndex.
+*/
+
+var array = [2, 5, 9, 2];
+console.log("Array for lastIndexOf example: " + array);
+console.log("array.lastIndexOf(2): " + array.lastIndexOf(2));     // 3
+
+
+//Array methods
+/*
+toString
+join
+concat
+splice
+push
+pop
+unshift
+shift
+reverse
+sort // good for strings but bad for numbers
+The sort() function sorts data lexicographically, assuming the data elements are strings,
+
+forEach
+every
+some
+reduce
+
+
+*/
