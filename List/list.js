@@ -45,4 +45,25 @@ function List() {
   function append(element) {
     this.dataStore[this.listSize++] = element;
   }
+
+  // find an element
+  function find(element) {
+    for (var i = 0; i < this.dataStore.length; i++) {
+      if (this.dataStore[i] === element) {
+        return i;
+      }
+    }
+    return -1;
+  }
+  //Remove element
+  function remove(element) {
+    var index = this.find(element);
+    if(index > -1) {
+      this.dataStore.splice(index, 1);
+      --this.listSize;
+      return true; // element was removed
+    }
+    return false; // element not found
+  }
+
 }
