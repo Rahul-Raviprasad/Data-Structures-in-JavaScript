@@ -66,4 +66,24 @@ function List() {
     return false; // element not found
   }
 
+  // length of List
+  function length() {
+    return this.listSize;
+  }
+
+  //toString methods
+  function toString() {
+    return this.dataStore;
+  }
+
+  //Insert element
+  function insert(element, after) {
+    var index = this.find(after);
+    if(index > -1) {
+      this.dataStore.splice(index + 1, 0, element);
+      ++this.listSize;
+      return true //element was inserted successfully
+    }
+    return false; //element was inserted since after was not found
+  }
 }

@@ -262,3 +262,25 @@ filter
 
 
 */
+
+/*
+A very easy and common mistake people do is to assume JS Arrays, are array like
+other languages.
+Also to ignore the time complexity of many of the in-built methods.
+It is very easy to tell that .map , .each or .filter has complexity of
+order N. But it is much harder to tell for methods such as
+.indexOf ---what is the order??
+It is also of order N
+
+Now that you are aware that these functions do have a time complexity of their own,
+why would you keep using them? Well for that I give you these reasons:
+
+  #They are easier to use then having to write your own for loops.
+  #They are easier to read then nested for loops.
+  #And perhaps the most important reason is that these methods have been optimized
+   by the JavaScript engines that run them and functions designed
+   using them are usually faster.
+   So despite these methods bringing time complexities of their own
+   it is still best practice to use them whenever possible in order to make
+   your code more readable and more optimized.
+*/
