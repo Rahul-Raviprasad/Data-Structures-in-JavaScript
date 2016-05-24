@@ -86,4 +86,21 @@ function List() {
     }
     return false; //element was inserted since after was not found
   }
+
+  //Remove all elements from the list
+  function clear() {
+    delete this.dataStore;
+    this.dataStore = [];
+    this.listSize = this.pos = 0;
+  }
+
+  //Determine if the given value is in the listSize
+  function contains(element) {
+    for (var i = 0; i < this.dataStore.length; i++ ) {
+      if(this.dataStore[i] === element) {
+        return true;
+      }
+    }
+    return false;
+  }
 }
