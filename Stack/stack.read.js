@@ -78,4 +78,41 @@ function isPalindrome(word) {
 
 /*
 3. Demonstrating Recursion
+
+We can use stacks to simulate recursive processes.
+Few links :
+http://www.htmlgoodies.com/primers/jsp/article.php/3622321
+http://blog.moertel.com/posts/2013-05-11-recursive-to-iterative.html
+http://stackoverflow.com/questions/159590/way-to-go-from-recursion-to-iteration
+http://stackoverflow.com/questions/1549943/design-patterns-for-converting-recursive-algorithms-to-iterative-ones
+
+
 */
+
+//A recursive function for factorial
+function factorial(number) {
+  if(number === 0) {
+    return 1;
+  } else {
+    return number * factorial(number - 1);
+  }
+}
+
+console.log("factorial methid using recursion of 4 should return 24: factorial(4): " + factorial(4));
+
+// to simulate the same behavior keep pushing the number from n till one onto a
+//stack, then inside a loop pop each number and multiply to the running product
+//factorial using Stack
+function factorialStack(number) {
+  var s = new Stack();
+  while(n   > 1) {
+    s.push(n--);
+  }
+  var product = 1;
+  while(s.length() > 0) {
+    product *= s.pop();
+  }
+  return product;
+}
+
+console.log("factorial method using stack of 4 should return 24: factorialStack(4): " + factorialStack(4));
