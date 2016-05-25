@@ -29,4 +29,53 @@ here is the algorithm for this conversion(Note: this only works for bases 2 to 9
   1.3 Repeat steps 1 and 2 until n = 0 and there are no significant digits remaining.
   1.4 Build the converted number string by popping the stack until the stack is empty.
 
+
+
+*/
+
+function multipleBase(num, base) {
+  var s = new Stack(); //This has dependency on the Stack we defined in stack.js
+  do {
+    s.push(num % base);
+    num = Math.floor(num /= base);
+  } while(num > 0);
+
+  var converted = "";
+  while(s.length() > 0) {
+    converted += s.pop();
+  }
+
+  return converted;
+}
+
+/*
+2. Palindromes
+ A palindrome is a word, sentence or number which is spelled same
+ from left to right and right to left. eg. Dad, 1001
+
+ Logic: We can use a stack to determine whether or not a given string
+ is a palindrome. We take the original string and push each character
+ onto a stack, moving from left to right. When the end of the string
+ is reached, the stack contains the original string in reverse order,
+ with the last letter at the top of the stack and the first letter at
+ the bottom of the stack.
+*/
+
+function isPalindrome(word) {
+  var s =  new Stack();
+  for(var i = 0; i < word.length; i++) {
+    s.push(word[i]);
+  }
+  var reverse = "";
+  while(s.length() > 0) {
+    reverse += s.pop();
+  }
+  if(word === reverse) {
+    return true;
+  }
+  return false;
+}
+
+/*
+3. Demonstrating Recursion
 */
