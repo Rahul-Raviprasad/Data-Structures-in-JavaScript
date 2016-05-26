@@ -12,4 +12,9 @@ The 2 primary operations of queue are
 enqueue: insert element at the end and
 dequeue: remove element from the front.
 peek: returns the element in the front.
+
+
+Application:
+//simulation
+// in radix sort
 */
