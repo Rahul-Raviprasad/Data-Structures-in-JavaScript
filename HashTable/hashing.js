@@ -32,5 +32,7 @@ Modular Hashing: if the keys are random integers, then the hash funciton should
 more evenly distribute the keys.
 
 In many applications the keys strings, choosing a hash function to work with string
-key can be challenging. 
+key can be challenging.
+
+ 
 */
