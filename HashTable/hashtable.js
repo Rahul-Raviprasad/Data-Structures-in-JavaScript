@@ -4,6 +4,9 @@ function HashTable() {
   this.showDistro = showDistro;
   this.put = put;
 
+  //This simple hash function computes a hash value by summing the ASCII
+  //value of each name. A big problem with function is that there can
+  //be collisions
   function simpleHash() {
     var total = 0;
     for(var i=0; i < data.length; ++i) {
