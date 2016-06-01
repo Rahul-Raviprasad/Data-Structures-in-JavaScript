@@ -34,5 +34,23 @@ more evenly distribute the keys.
 In many applications the keys strings, choosing a hash function to work with string
 key can be challenging.
 
- 
+
 */
+
+//Example using the hashtable defined in hashtable.js
+var someNames = [
+  "Rahul",
+  "Anoop",
+  "Prakiti",
+  "Swathi",
+  "Vamshi",
+  "Deepak",
+  "Rachit",
+  "Shruthi",
+  "Subrat"
+];
+var hTable = new HashTable(); //requires the hashtable class
+for (var i = 0; i < someNames.length; ++i) {
+  hTable.put(someNames[i]);
+}
+hTable.showDistro();
