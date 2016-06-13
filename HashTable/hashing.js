@@ -54,3 +54,15 @@ for (var i = 0; i < someNames.length; ++i) {
   hTable.put(someNames[i]);
 }
 hTable.showDistro();
+
+
+/*
+We can have collision if our hash function generates the same hash,
+there are 2 popular means of collision resolution.
+seperate chaining and linear probing.
+
+Seperate chaining
+When a collision occurs, we still need to be able to store the key at the
+generated index, but we can't store more than one piece of data at a particular
+element.
+*/
