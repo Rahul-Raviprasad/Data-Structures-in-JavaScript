@@ -65,4 +65,20 @@ Seperate chaining
 When a collision occurs, we still need to be able to store the key at the
 generated index, but we can't store more than one piece of data at a particular
 element.
+Separate chaining is a technique where each array element of a
+hash table stores another data structure, such as another array,
+which is then used to store keys. Using this technique, if two keys generate
+the same hash value, each key can be stored in a different
+position of the secondary array.
+
+Linear probing
+
+A second technique for handling collisions is called linear probing.
+Linear probing is an example of a more general hashing technique called
+open-addressing hashing. With linear probing, when there is a collision,
+the program simply looks to see if the next element of the hash table is empty.
+If so, the key is placed in that element. If the element is not empty,
+the program continues to search for an empty hash-table element until one
+is found. This technique makes use of the fact that any hash table is going to
+have many empty elements and it makes sense to use the space to store keys.
 */
