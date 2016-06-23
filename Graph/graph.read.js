@@ -49,3 +49,12 @@ Another example of a real- word system that can be modeled by a graph is a
 consumer market, where vertices represent both institutions (vendors)
 and consumers.
 */
+
+/*
+Adjacency list
+link: https://en.wikipedia.org/wiki/Adjacency_list
+In graph theory and computer science, an adjacency list is a collection of
+unordered lists used to represent a finite graph. Each list describes the set
+of neighbors of a vertex in the graph. This is one of several commonly used
+representations of graphs for use in computer programs.
+*/
