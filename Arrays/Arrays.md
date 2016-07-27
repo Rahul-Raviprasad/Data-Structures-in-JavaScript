@@ -44,7 +44,7 @@ console.log("Array can hold any type of data : " + JSON.stringify(myArrayOfObjec
 ### Determining with absolute accuracy whether or not a JavaScript object is an array
     --------Taken from http://web.mit.edu/jwalden/www/isArray.html ----------
 
-typeof null === "object" is perhaps the most common typing mistake in JavaScript, but there are others as well. A much less common but no less confusing problem is that of determining whether an object is an array. Surely, say you, this is a simple problem with a simple solution, like so:
+typeof null === "object" is perhaps the most common typing mistake in JavaScript, but there are others as well. A much less common but no less confusing problem is that of determining whether an object is an array. This seems to be a simple problem with a simple solution, like so:
 
 ```JavaScript
 if (o instanceof Array)
@@ -100,13 +100,16 @@ for(var i = 0; i < patterns.length; i++) {
 }
 ```
 
-//Shallow vs Deep copy of Arrays
-/* Since we know that Arrays are internally objects in JS, and when we
-copy arrays like var newArr = existingArr; , we are basically passing the reference
-to the existingArr. This results in Shallow Copy, That is if newArr is modified
-it affects the existingArr as well.
- */
-//Example
+## Shallow vs Deep copy of Arrays
+Since we know that Arrays are internally objects in JS, and when we copy arrays like
+```javascript
+  var newArr = existingArr;
+```
+ we are basically passing the reference to the existingArr. This results in Shallow Copy, That is if newArr is modified it affects the existingArr as well.
+
+### Example
+
+```javascript
 console.log("Shallow copy of Arrays :---");
 var vehicles = ["car", "bike", "ship"];
 var newVehicles = [];
@@ -131,17 +134,16 @@ console.log("vehicle before changing the copied array: " + vehicles);
 newVehicles[0] = "Aeroplane";
 console.log("vehicle after changing copied array: " + vehicles);
 console.log("newVehicles after changing : " + newVehicles);
+```
 
+## Array.prototype.indexOf()
 
-//Array.prototype.indexOf()
-
-/*
-The indexOf() method returns the first index at which a given
-element can be found in the array, or -1 if it is not present.
+The indexOf() method returns the first index at which a given element can be found in the array, or -1 if it is not present.
 
 Syntax
+```javascript
 arr.indexOf(searchElement[, fromIndex = 0])
-
+```
 Parameters
 
 searchElement: Element to locate in the array.
