@@ -140,28 +140,22 @@ console.log("newVehicles after changing : " + newVehicles);
 
 The indexOf() method returns the first index at which a given element can be found in the array, or -1 if it is not present.
 
-Syntax
+#### Syntax
 ```javascript
 arr.indexOf(searchElement[, fromIndex = 0])
 ```
-Parameters
+#### Parameters
 
 searchElement: Element to locate in the array.
-fromIndex: The index to start the search at.
-If the index is greater than or equal to the array's length, -1 is returned,
-which means the array will not be searched.
-If the provided index value is a negative number, it is taken as the offset
-from the end of the array. Note: if the provided index is negative,
-the array is still searched from front to back.
-If the calculated index is less than 0, then the whole array will be searched.
+fromIndex: The index to start the search at. If the index is greater than or equal to the array's length, -1 is returned, which means the array will not be searched. If the provided index value is a negative number, it is taken as the offset from the end of the array. Note: if the provided index is negative, the array is still searched from front to back. If the calculated index is less than 0, then the whole array will be searched.
 Default: 0 (entire array is searched).
 
-Description
-indexOf() compares searchElement to elements of the Array using strict equality
-(the same method used by the === or triple-equals operator).
-*/
-//Examples
+#### Description
+indexOf() compares searchElement to elements of the Array using strict equality (the same method used by the === or triple-equals operator).
 
+
+### Examples
+```javascript
 var array = [2, 9, 9];
 console.log("Array for indexOf example: " + array);
 console.log("array.indexOf(2): " + array.indexOf(2));     // 0
@@ -169,22 +163,20 @@ console.log("array.indexOf(7): " + array.indexOf(7));     // -1
 console.log("array.indexOf(9, 2): " + array.indexOf(9, 2));  // 2
 console.log("array.indexOf(2, -1): " + array.indexOf(2, -1)); // -1
 console.log("array.indexOf(2, -3): " + array.indexOf(2, -3)); // 0
+```
 
+## Array.prototype.lastIndexOf
 
-//Array.prototype.lastIndexOf
+The lastIndexOf() method returns the last index at which a given element can be found in the array, or -1 if it is not present. The array is searched backwards, starting at fromIndex.
 
-/*The lastIndexOf() method returns the last index at which a given element
-can be found in the array, or -1 if it is not present.
-The array is searched backwards, starting at fromIndex.
-*/
-
+```javascript
 var array = [2, 5, 9, 2];
 console.log("Array for lastIndexOf example: " + array);
 console.log("array.lastIndexOf(2): " + array.lastIndexOf(2));     // 3
+```
 
+## List of Array methods
 
-//Array methods
-/*
 toString
 join
 concat
@@ -197,40 +189,29 @@ reverse
 sort // good for strings but bad for numbers
 The sort() function sorts data lexicographically, assuming the data elements are strings,
 
-//iterator functions that don't return new array
+## iterator functions that don't return new array
 forEach
 every
 some
 reduce
 reduceRight
 
-//Iterator functions which return a new array
+## Iterator functions which return a new array
 map
 filter
 
 2D Array and jagged array
 
+A very easy and common mistake people do is to assume JS Arrays, are array like other languages. Also to ignore the time complexity of many of the in-built methods. It is very easy to tell that .map , .each or .filter has complexity of order N. But it is much harder to tell for methods such as
+.indexOf ---what is the order?? It is also of order N
 
-*/
+Now that you are aware that these functions do have a time complexity of their own, why would you keep using them? Well for that I give you these reasons:
 
-/*
-A very easy and common mistake people do is to assume JS Arrays, are array like
-other languages.
-Also to ignore the time complexity of many of the in-built methods.
-It is very easy to tell that .map , .each or .filter has complexity of
-order N. But it is much harder to tell for methods such as
-.indexOf ---what is the order??
-It is also of order N
+  They are easier to use then having to write your own for loops.
+  They are easier to read then nested for loops.
+  And perhaps the most important reason is that these methods have been optimized by the JavaScript engines that run them and functions designed using them are usually faster.
 
-Now that you are aware that these functions do have a time complexity of their own,
-why would you keep using them? Well for that I give you these reasons:
-
-  #They are easier to use then having to write your own for loops.
-  #They are easier to read then nested for loops.
-  #And perhaps the most important reason is that these methods have been optimized
-   by the JavaScript engines that run them and functions designed
-   using them are usually faster.
-   So despite these methods bringing time complexities of their own
+So despite these methods bringing time complexities of their own
    it is still best practice to use them whenever possible in order to make
    your code more readable and more optimized.
 
