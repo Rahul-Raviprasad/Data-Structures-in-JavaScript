@@ -211,16 +211,12 @@ Now that you are aware that these functions do have a time complexity of their o
   They are easier to read then nested for loops.
   And perhaps the most important reason is that these methods have been optimized by the JavaScript engines that run them and functions designed using them are usually faster.
 
-So despite these methods bringing time complexities of their own
-   it is still best practice to use them whenever possible in order to make
-   your code more readable and more optimized.
+So despite these methods bringing time complexities of their own it is still best practice to use them whenever possible in order to make your code more readable and more optimized.
 
-   Still for Big O analysis point of view
+  ##### Still for Big O analysis point of view
 Here taken from stack overflow link: http://stackoverflow.com/questions/11514308/big-o-of-javascript-arrays
 
-In contrast to most languages, which implement arrays with, well, arrays,
-in Javascript Arrays are objects, and values are stored in a hashtable,
-just like regular object values. As such:
+In contrast to most languages, which implement arrays with, well, arrays, in Javascript Arrays are objects, and values are stored in a hashtable, just like regular object values. As such:
 
 Access - O(1)
 Appending - Amortized O(1) (sometimes resizing the hashtable is required; usually only insertion is required)
@@ -228,8 +224,5 @@ Prepending - O(n) via unshift, since it requires reassigning all the indexes
 Insertion - Amortized O(1) if the value does not exist. O(n) if you want to shift existing values (Eg, using splice).
 Deletion - Amortized O(1) to remove a value, O(n) if you want to reassign indices via splice.
 Swapping - O(1)
-In general, setting or unsetting any key in a dict is amortized O(1),
-and the same goes for arrays, regardless of what the index is.
-Any operation that requires renumbering existing values is O(n) simply because
-you have to update all the affected values.
-*/
+In general, setting or unsetting any key in a dict is amortized O(1), and the same goes for arrays, regardless of what the index is.
+Any operation that requires renumbering existing values is O(n) simply because you have to update all the affected values.
