@@ -184,8 +184,24 @@ As you can see, the process isn't all that much more complicated, but it does ta
 Note that there are very few recursive functions that will actually overflow the JavaScript stack. Actually, that's not quite true. Almost any recursive function can overflow the stack, but most of the time the data that we give the function makes it a very, very unlikely occurance. When, for instance, will you ever encounter an XML document with a node 1,000 levels deep? Pretty much never.
 
 
-Uses of Recursion
+#### Uses of Recursion
 One of the most common algorithms written recursively would be what we call a binary search.
 As it turns out, this is one of the quickest ways to find data when we know all the data is already sorted.
-Speaking of sorting, we have, well, sorting algorithms. Many sorting algorithms, including one of the fastest, the QuickSort, use recursion to help them along. The QuickSort algorithm spits the data into chunks and sorts each chunk seperately and recursively splits those into smaller chunks and sorts those.
+Speaking of sorting, we have, well, sorting algorithms. Many sorting algorithms, including one of the fastest, the QuickSort, use recursion to help them along. The QuickSort algorithm spits the data into chunks and sorts each chunk separately and recursively splits those into smaller chunks and sorts those.
 Another very common use of recursion is to validate or parse some type of data. An XML file is an example, but many other forms of parsing, such as counting the number of times a word or phrase occurs in a sentence or book, can be performed efficiently with recursion.
+
+
+## Few Stack Applications
+#### Direct Applications
+1.  Balancing of symbols
+2. infix to postfix conversion
+3. Evaluation of post fix expression
+4. Implementing Function Calls including recursion
+5. Finding of spans(finding spans in stock markets)
+6. Page-Visited history in web browser (Back button)
+7. Undo sequence in a text editor
+8. Matching Tags in a HTML or XML
+
+#### Indirect Applications
+1. Auxiliary Data Structure for other Algorithms(Example: Tree traversal Algorithm)
+2. Component of other Data Structures(Example: Simulating Queues)
