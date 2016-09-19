@@ -28,7 +28,46 @@ A binary tree is either a leaf or an internal node (the root) and one or two bin
 * A binary tree of height h has
   1. At most 2^i nodes at level i
   2. At most 1+@+2^2 + ... + 2^h = (2^(h+1) - 1) nodes
-
 * If the tree has n nodes then
   1. n <= (2^(h+1) -1)
   2. Hence h >= log(base 2)(n+1)/2
+
+## Maximum height of a binary tree
+* A binary tree on n nodes has a height at most n-1
+* This is obtained when every node (except the leaf) has one child.
+
+## Number of leaves in a binary tree
+* no. of leaves <= 1+ no. of internal nodes.
+* Proof by induction: on the number of nodes
+  Tree with 1 node : has a leaf but no internal node.
+  Assume statement true for tree with k-1 internal node
+  So for a tree with k internal nodes has k1 internal nodes in left, and (k-k1-1) internal nodes in the right subtree.
+  No.leaves < = (k1+1) + (k-k1) = k+1
+
+##  For a binary tree on n nodes
+* No. of leaves + no. of internal nodes = n
+* No. of leaves <= No.of internal nodes + 1
+* Hence, No. of leaves <= (n+1)/2
+* Minimum no. of leaves is 1
+
+## ADTs for Trees
+* generaic container methods: size(), isEmpty(), elements()
+* positional container methods: positions(), swapElements(p,q), replaceElement(p,e)
+* query methods: isRoot(p), isInternal(p), isExternal(p)
+* accessor methods: root(), parent(p), children(p), leftChild(p), rightChild(p), sibling(p)
+* pudate methods:
+  * expandExternal(p), removeAboveExternal(p)
+  * other application specific methods.
+
+## The Node Structure
+Each node in the tree contains
+* key[x] - key
+* left[x] - pointer to left child
+* right[x] - pointer to right child
+* p[x] - pointer to parent node
+
+## Unbounded Branching
+Unbounded Tree:
+Parent: UnboundedTree
+firstChild: UnboundedTree: Allows you to access the other siblings through a linkedList
+RightChild: UnboundedTree
