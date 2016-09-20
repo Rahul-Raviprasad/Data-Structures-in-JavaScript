@@ -1,13 +1,10 @@
 # Graphs
 
-The efficiency of the graph algorithms largely depends on the data structure
-used to represent it.
+The efficiency of the graph algorithms largely depends on the data structure used to represent it.
 
 ## Graph Definitions
 
-A graph consists of a set of vertices and a set of edges. Edges are defined as a pair(v1, v2) where v1 and v2 are two
-vertices on the graph. A vertex can also have a weight, which is sometimes called a cost. A graph whose pairs are ordered are called a directed graph or just a digraph. When pairs are ordered in a directed graph, an arrow is
-drawn from one pair to another pair. Directed graphs show the flow direction from one vertex to another. A flow chart that that explains the directions of computations in a computer program is an example of directed graph.
+A graph consists of a set of vertices and a set of edges. Edges are defined as a pair(v1, v2) where v1 and v2 are two vertices on the graph. A vertex can also have a weight, which is sometimes called a cost. A graph whose pairs are ordered are called a directed graph or just a digraph. When pairs are ordered in a directed graph, an arrow is drawn from one pair to another pair. Directed graphs show the flow direction from one vertex to another. A flow chart that that explains the directions of computations in a computer program is an example of directed graph.
 
 If a graph is not ordered then it is called a unordered graph.
 
@@ -27,3 +24,24 @@ Another example of a real- word system that can be modeled by a graph is a consu
 ## Adjacency list
 link: https://en.wikipedia.org/wiki/Adjacency_list
 In graph theory and computer science, an adjacency list is a collection of unordered lists used to represent a finite graph. Each list describes the set of neighbors of a vertex in the graph. This is one of several commonly used representations of graphs for use in computer programs.
+
+## What is a Graph?
+* A graph is a generally represented by a 2 tuple
+    A graph G = (V,E) is composed of:
+    V: set of vertices
+    E: set of edges connecting the vertices in V
+* An edge e = (u,v) where u, v are a pair of vertices
+
+A graph like this
+
+a ------- b
+|  \      |
+|   \     |
+|    c    |
+|   /  \  |
+|  /    \ |
+d ------- e
+
+can be represented as following
+V = {a, b, c, d, e}
+E = {(a,b), (a,c), (a,d), (b,e), (c,d), (c,e),(d,e)}
