@@ -52,3 +52,16 @@ E = {(a,b), (a,c), (a,d), (b,e), (c,d), (c,e),(d,e)}
 2. Networks
   * Roads maps
   * Communication networks
+3. Decision graphs(generally directed)
+In the case of a directed graph, the edges would be an ordered pair, where the ordering is important as it tells us the direction of the graph edge is.
+
+## Graph Terminology
+* Adjacent vertices: vertices connected by an edge.
+* Degree(of a vertex): Number of Adjacent vertices.
+* An edge is said to be incident on 2 vertices
+* What is the sum of the degrees of all vertices?
+* Twice the number of edges, since adjacent vertices each count the adjoining edge, it will be counted twice
+* Path: sequence of vertices v1, v2, ...vk such that consecutive vertices vi and vi+1 are adjacent.
+* Simple Path: no repeated vertices
+* Cycle: simple path, except that the last vertex is the same as the first vertex.
+* Connected graph: any two vertices are connected by some path
