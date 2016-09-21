@@ -45,3 +45,10 @@ d ------- e
 can be represented as following
 V = {a, b, c, d, e}
 E = {(a,b), (a,c), (a,d), (b,e), (c,d), (c,e),(d,e)}
+
+## Applications
+1. Electronic circuits
+  To find the path of least resistance
+2. Networks
+  * Roads maps
+  * Communication networks
