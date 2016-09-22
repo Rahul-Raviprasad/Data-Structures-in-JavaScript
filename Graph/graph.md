@@ -65,3 +65,13 @@ In the case of a directed graph, the edges would be an ordered pair, where the o
 * Simple Path: no repeated vertices
 * Cycle: simple path, except that the last vertex is the same as the first vertex.
 * Connected graph: any two vertices are connected by some path
+* Subgraph: subset of vertices and edges forming a graph
+* connected component: maximal connected subgraph.
+* (free) tree: connected graph without cycles.
+* forest - collection of trees.
+
+## Connectivity
+* Let n = Number of vertices, and m = Number of edges
+* Complete graph: one in which all pairs of vertices are adjacent.
+* How many edges does a complete graph have?
+  There are n(n-1)/2 pairs of vertices and so m = n(n-1)/2.
