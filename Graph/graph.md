@@ -73,5 +73,9 @@ In the case of a directed graph, the edges would be an ordered pair, where the o
 ## Connectivity
 * Let n = Number of vertices, and m = Number of edges
 * Complete graph: one in which all pairs of vertices are adjacent.
-* How many edges does a complete graph have?
+* How many edges(m) does a complete graph(G) have?
   There are n(n-1)/2 pairs of vertices and so m = n(n-1)/2.
+* How many edges does a complete directed graph have? twice as above since each edge will be in both directions
+* Minimum number of edges on a graph? zero
+* for a tree m = n-1
+* if m < n-1, G is not connected
