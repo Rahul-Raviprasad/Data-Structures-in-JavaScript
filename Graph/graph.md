@@ -79,3 +79,53 @@ In the case of a directed graph, the edges would be an ordered pair, where the o
 * Minimum number of edges on a graph? zero
 * for a tree m = n-1
 * if m < n-1, G is not connected
+
+## Spanning Tree
+* A spanning tree of G is a subgraph which is a tree and which contains all vertices of G
+* Failure on any edge disconnects system(least fault tolerant)
+
+## The Bridges of Koenigsberg
+* suppose you are a postman, and you didn't want to retrace your steps.
+* In 1736, Euler proved that this is not possible.
+
+* Multi Graph: there can be multiple edges between a pair of vertices
+* Eulerian Tour: path that traverses every edge exactly once and returns to the first vertex.
+* Euler's Theorem: A graph has a Eulerian Tour if and only if all vertices have even degree.
+
+## The Graph ADT
+* The Graph ADT is a positional container whose positions are the vertices and the edges of the graph.
+  * size() Return the number of vertices + number of edges of G.
+  * isEmpty()
+  * elements()
+  * positions()
+  * swap()
+  * replaceElement()
+* Notation: Graph G; Vertices v,w; Edge e; Object o
+  * numVertices() Return the number of vertices of G.
+  * numEdges() Return the number of edges of G
+  * vertices() Return an enumeration of the vertices of G.
+  * edges() Return an enumeration of the edges of G.
+  * directedEdges() enumeration of all directed edges in G.
+  * undirectedEdges() enumeration of all undirected edges in G.
+  * incidentEdges() enumeration of all edges incident on v.
+  * inIncidentEdges(v) enumeration of all edges entering v.
+  * outIncidentEdges(v) enumeration of all edges leaving v.
+  * opposite(v, e) an endpoint of e distinct from v
+  * degree(v) the degree of v.
+  * inDegree(v) the in-degree of v.
+  * outDegree(v) the out-degree of v.
+  * adjacentVertices(v) enumeration of vertices adjacent to v.
+  * inAdjacentVertices(v) enumeration of vertices adjacent to v along incoming edges.
+  * areAdjacent(v,w) whether vertices v and w are adjacent.
+  * endVertices(e) the end vertices of e.
+  * origin(e) the end vertex from which e leaves
+  * destination(e) the end vertex at which e arrives.
+  * isDirected(e) true iff e is directed.
+* Update Methods
+  * makeUndirected(e) Set e to be an undirected edge.
+  * reverseDirection(e) Switch the origin and destination vertices of e.
+  * setDirectionFrom(e,v) Sets the direction of e away from v, one of its end vertices.
+  * setDirectionTo(e,v) Sets the direction of e towards v, one of its end vertices.
+  * insertEdge(v,w,o) Insert and return an undirected edges between v and w, storing o at this position.
+  * insertDirectedEdge(v,w,o) Insert and return a directed edge between v and w, storing o at this position.
+  * insertVertex(o) Insert and return a new (isolated) vertex storing o at this position.
