@@ -129,3 +129,34 @@ In the case of a directed graph, the edges would be an ordered pair, where the o
   * insertEdge(v,w,o) Insert and return an undirected edges between v and w, storing o at this position.
   * insertDirectedEdge(v,w,o) Insert and return a directed edge between v and w, storing o at this position.
   * insertVertex(o) Insert and return a new (isolated) vertex storing o at this position.
+
+## Data Structures for Graphs
+* Edge list
+* Adjacency lists
+* Adjacency matrix
+
+How can we represent graphs?
+To start with, we store the vertices and the edges into two containers, and each edge object has references to the vertices it connects.
+Additional structures can be used to perform efficiently the methods of the Graph ADT
+
+### Edge list
+* The edges list structure simply stores the vertices and edges in two unsorted sequences.
+* Easy to implement.
+* Finding the edges incident on a given vertex is inefficient since it requires examining the entire edge sequence.
+
+#### Performance of Edge List
+Operation vs Time
+size, isEmpty, replaceElement, swap    ------ O(1)
+numVertices, numEdges ----------------------- O(1)
+vertices                    ----------------- O(n)
+edges, directedEdges, undirectedEdges ------- O(m)
+elements, positions         ----------------- O(n+m)
+endVertices, opposite, origin, destination, isDirected --- O(1)
+incidentEdges, inIncidentEdges, outIncidentEdges, adjacentVertices,
+inAdjacentVertices, outAdjacentVertices, areAdjacent, degree, inDegree, outDegree --- O(m)
+
+insertVertex, insertEdge, insertDirectedEdge, removeEdge, makeUndirected, reverseDirection, setDirectionFrom, setDirectionTo              ----  O(1)
+removeVertex                --------- O(m)
+
+### Adjacency List (Traditional)
+* adjacency list of 
