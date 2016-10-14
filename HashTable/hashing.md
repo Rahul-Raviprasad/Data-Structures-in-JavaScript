@@ -48,3 +48,13 @@ Separate chaining is a technique where each array element of a hash table stores
 ## Linear probing
 
 A second technique for handling collisions is called linear probing. Linear probing is an example of a more general hashing technique called open-addressing hashing. With linear probing, when there is a collision, the program simply looks to see if the next element of the hash table is empty. If so, the key is placed in that element. If the element is not empty, the program continues to search for an empty hash-table element until one is found. This technique makes use of the fact that any hash table is going to have many empty elements and it makes sense to use the space to store keys.
+
+## Motivation for Hashing
+- docdist
+- databases
+- compilers and interpreters
+- network router, server
+- substring search
+- string commonalities
+- file /dir synchronization
+- cryptography
