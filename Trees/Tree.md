@@ -51,11 +51,11 @@ A binary tree is either a leaf or an internal node (the root) and one or two bin
 * Minimum no. of leaves is 1
 
 ## ADTs for Trees
-* generaic container methods: size(), isEmpty(), elements()
+* generic container methods: size(), isEmpty(), elements()
 * positional container methods: positions(), swapElements(p,q), replaceElement(p,e)
 * query methods: isRoot(p), isInternal(p), isExternal(p)
 * accessor methods: root(), parent(p), children(p), leftChild(p), rightChild(p), sibling(p)
-* pudate methods:
+* update methods:
   * expandExternal(p), removeAboveExternal(p)
   * other application specific methods.
 
