@@ -213,7 +213,7 @@ Now that you are aware that these functions do have a time complexity of their o
 
 So despite these methods bringing time complexities of their own it is still best practice to use them whenever possible in order to make your code more readable and more optimized.
 
-  ##### Still for Big O analysis point of view
+##### Still for Big O analysis point of view
 Here taken from stack overflow link: http://stackoverflow.com/questions/11514308/big-o-of-javascript-arrays
 
 In contrast to most languages, which implement arrays with, well, arrays, in Javascript Arrays are objects, and values are stored in a hashtable, just like regular object values. As such:
