@@ -159,4 +159,8 @@ insertVertex, insertEdge, insertDirectedEdge, removeEdge, makeUndirected, revers
 removeVertex                --------- O(m)
 
 ### Adjacency List (Traditional)
-* adjacency list of 
+* adjacency list of
+
+
+### Converting a maze to graph
+https://aakritty.wordpress.com/2014/03/02/shortest-path-through-a-maze/
