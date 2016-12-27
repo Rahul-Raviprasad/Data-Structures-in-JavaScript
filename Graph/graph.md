@@ -162,5 +162,11 @@ removeVertex                --------- O(m)
 * adjacency list of
 
 
+### Application of BFS
+* Finding all connected components in a graph
+* Finding all nodes within one connected component
+* Finding the shortest path between two nodes
+* Testing a graph for bipartiteness  
+
 ### Converting a maze to graph
 https://aakritty.wordpress.com/2014/03/02/shortest-path-through-a-maze/
