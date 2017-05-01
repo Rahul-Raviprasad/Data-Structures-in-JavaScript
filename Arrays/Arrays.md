@@ -1,18 +1,17 @@
-#Arrays
-
+## Arrays
 Arrays are the most commonly used data structure in JS.
 
+### Difference between Arrays in other programming languages and JavaScript
 In most programming languages Arrays are inbuilt and they are a linear collection of elements. That is they occupy adjacent memory blocks(contiguous memory locations).
-
 Which makes their lookup very fast, so they are considered good choices for many storage purposes.
 
-But in JS Array are completely different altogether. They are specialized type of JS Object, with the indices being strings(not just offsets like 0,1,2,3
-
+But in JS Array are completely different altogether. **They are specialized type of JS Object, with the indices being strings(not just offsets like (0, 1, 2, 3).**
 When integers are used myArray[1], then this "1" is converted to string internally, to conform to the requirement of the JS Object.
 
-So we can see that it may not be a contiguous memory block like in other languages so Arrays in JS may not be as efficient as other languages.
+**So we can see that it may not be a contiguous memory block like in other languages so Arrays in JS may not be as efficient as other languages.**
 
-The Array is one of the recognized JS Object type and so it has both properties and functions
+The Array is of type Object and so it has both properties and functions
+
 Examples
 ```JavaScript
 //Creating Arrays
