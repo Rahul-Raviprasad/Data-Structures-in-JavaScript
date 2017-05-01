@@ -34,7 +34,7 @@ var phones = new Array(10);
 console.log("Checking the length property of array phones: " + phones.length);
 //this will log 10
 
-//Arrays can hold "any" type of Data (used <any> intentionally for typescript guys :p)
+//Arrays can hold "any" type of Data
 var someObj = {"yo": "yo", "blah": "blahblah"};
 var myArrayOfObjects = [10, "car", false, someObj ];
 console.log("Array can hold any type of data : " + JSON.stringify(myArrayOfObjects));
