@@ -1,8 +1,14 @@
 # Tree
 
+Tree is used for storing data of hierarchical nature. It is a non linear data structure.
+
+![tree](https://github.com/rahul-raviprasad/ "Tree Data Structure")
+
+
 ## Tree Definitions
 
-Ordered  Tree is one in which the children of each node are ordered.
+* **ROOT:** The root of the tree is the node with no parents.
+Ordered Tree: one in which the children of each node are ordered.
 
 Binary tree: Ordered tree will all nodes having at most 2 children.
 
