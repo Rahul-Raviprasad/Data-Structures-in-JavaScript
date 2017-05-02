@@ -2,7 +2,7 @@
 
 Tree is used for storing data of hierarchical nature. It is a non linear data structure.
 
-![tree](https://github.com/rahul-raviprasad/ "Tree Data Structure")
+![tree](https://github.com/Rahul-Raviprasad/Data-Structures-in-JavaScript/raw/master/Trees/tree.jpg "Tree Data Structure")
 
 
 ## Tree Definitions
