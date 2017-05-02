@@ -7,10 +7,16 @@ Tree is used for storing data of hierarchical nature. It is a non linear data st
 
 ## Tree Definitions
 
-* **ROOT:** The root of the tree is the node with no parents.
-Ordered Tree: one in which the children of each node are ordered.
+* **ROOT:** The root of the tree is the node with no parents. There can be at most one root of a tree.(In above image A)
+* **EDGE:** link from one parent to child.
+* **LEAF:** node in the bottom, with no children.(K, L, F, G, M, I, J)
+* **SIBLLINGS:** children of the same parents(K and L are siblings)
+* **ANCESTOR/DESCENDANT:** if a node falls in the path from one descendant and root, that node is an ancestor.
+* **SIZE of a Node:** number of descendant it has including itself. for example size of E node is 3.
+* **LEVEL:** set of all nodes at a given depth is called level of the tree(B, C, D are all at same level). The root node is at level 0.
 
-Binary tree: Ordered tree will all nodes having at most 2 children.
+* **Ordered Tree:** one in which the children of each node are ordered.
+* **Binary tree:** Ordered tree will all nodes having at most 2 children.
 
 ### Recursive Definition of a Binary Tree
 A binary tree is either a leaf or an internal node (the root) and one or two binary trees(left subtree and/or right subtree).
