@@ -43,6 +43,9 @@ console.log("Array can hold any type of data : " + JSON.stringify(myArrayOfObjec
 ### Determining with absolute accuracy whether or not a JavaScript object is an array
     --------Taken from http://web.mit.edu/jwalden/www/isArray.html ----------
 
+
+**Short Answer: Array.isArray Method**
+**Long Answer:**
 typeof null === "object" is perhaps the most common typing mistake in JavaScript, but there are others as well. A much less common but no less confusing problem is that of determining whether an object is an array. This seems to be a simple problem with a simple solution, like so:
 
 ```JavaScript
@@ -206,9 +209,9 @@ A very easy and common mistake people do is to assume JS Arrays, are array like 
 
 Now that you are aware that these functions do have a time complexity of their own, why would you keep using them? Well for that I give you these reasons:
 
-  They are easier to use then having to write your own for loops.
-  They are easier to read then nested for loops.
-  And perhaps the most important reason is that these methods have been optimized by the JavaScript engines that run them and functions designed using them are usually faster.
+*  They are easier to use then having to write your own for loops.
+*  They are easier to read then nested for loops.
+*  And perhaps the most important reason is that these methods have been optimized by the JavaScript engines that run them and functions designed using them are usually faster.
 
 So despite these methods bringing time complexities of their own it is still best practice to use them whenever possible in order to make your code more readable and more optimized.
 
