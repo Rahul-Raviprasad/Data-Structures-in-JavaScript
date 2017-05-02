@@ -10,7 +10,7 @@ Tree is used for storing data of hierarchical nature. It is a non linear data st
 * **ROOT:** The root of the tree is the node with no parents. There can be at most one root of a tree.(In above image A)
 * **EDGE:** link from one parent to child.
 * **LEAF:** node in the bottom, with no children.(K, L, F, G, M, I, J)
-* **SIBLLINGS:** children of the same parents(K and L are siblings)
+* **SIBLINGS:** children of the same parents(K and L are siblings)
 * **ANCESTOR/DESCENDANT:** if a node falls in the path from one descendant and root, that node is an ancestor.
 * **SIZE of a Node:** number of descendant it has including itself. for example size of E node is 3.
 * **LEVEL:** set of all nodes at a given depth is called level of the tree(B, C, D are all at same level). The root node is at level 0.
