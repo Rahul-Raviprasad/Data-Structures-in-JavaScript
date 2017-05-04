@@ -31,7 +31,7 @@ In binary trees a node can have at most 2 Children(left and right child).
 A binary tree is either a leaf or an internal node (the root) and one or two binary trees(left subtree and/or right subtree).
 
 ## Complete Binary Tree
-* level i has 2^i nodes
+* level i has 2^i nodes(max)
 * In a tree of height h
   * leaves are at level h
   * No. of leaves is 2^h
@@ -64,6 +64,10 @@ A binary tree is either a leaf or an internal node (the root) and one or two bin
   Assume statement true for tree with k-1 internal node
   So for a tree with k internal nodes has k1 internal nodes in left, and (k-k1-1) internal nodes in the right subtree.
   No.leaves < = (k1+1) + (k-k1) = k+1
+
+## Full Binary Tree
+A binary tree is full if every node has 0 or 2 children.
+In a full binary tree, number of leaf nodes = number of internal nodes + 1
 
 ##  For a binary tree on n nodes
 * No. of leaves + no. of internal nodes = n
