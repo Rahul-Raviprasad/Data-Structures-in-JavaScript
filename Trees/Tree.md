@@ -18,6 +18,15 @@ Tree is used for storing data of hierarchical nature. It is a non linear data st
 * **Ordered Tree:** one in which the children of each node are ordered.
 * **Binary tree:** Ordered tree will all nodes having at most 2 children.
 
+## Why Trees?
+1. The data we are representing might naturally form a hierarchy. For example, the file system on a computer.
+2. Binary search Trees provide moderate access/search.(quicker than LinkedList and slower than arrays).
+3. Trees provide moderate insertion/deletion(quicker than arrays and slower than unordered LinkedList).
+4. Trees don't have a upper limits as they are pointers.
+
+# Binary Tree
+In binary trees a node can have at most 2 Children(left and right child).
+
 ### Recursive Definition of a Binary Tree
 A binary tree is either a leaf or an internal node (the root) and one or two binary trees(left subtree and/or right subtree).
 
