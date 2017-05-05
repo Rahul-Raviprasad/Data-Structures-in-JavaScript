@@ -1,12 +1,3 @@
-# Trees
-
-Trees are commonly used data structures in computer science. A tree is a non linear data structure that is used to store data in a hierarchical manner for hierarchical data such as files in a  file system and for storing sorted data.
-
-A tree is made up of a set of nodes connected by edges. An example of a tree is a company's organizational structure.
-
-The top node of the tree is called the root node. If a node is connected to other nodes below it, then the preceding node is called the parent node and the node below it are its children. A node can have zero, one or more nodes connected to it. A node without any child node is called as a leaf node.
-
-
 ## Binary Trees
 
 The binary tree is chosen over other more primary data structures because you can search a binary tree very quickly(as opposed to a linked list) and you can easily insert and remove data from a binary tree(as opposed to an array)
