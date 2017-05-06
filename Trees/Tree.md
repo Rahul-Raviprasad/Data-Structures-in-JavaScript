@@ -14,6 +14,10 @@ Tree is used for storing data of hierarchical nature. It is a non linear data st
 * **ANCESTOR/DESCENDANT:** if a node falls in the path from one descendant and root, that node is an ancestor.
 * **SIZE of a Node:** number of descendant it has including itself. for example size of E node is 3.
 * **LEVEL:** set of all nodes at a given depth is called level of the tree(B, C, D are all at same level). The root node is at level 0.
+* **DEPTH:** length of the path from the root to the node(Depth of F == 2, B == 1, A == 0)
+* **HEIGHT OF NODE:** length of path from that node to the deepest node.
+* **HEIGHT OF THE TREE:** the maximum height among all nodes in the tree and depth of the tree is the maximum depth among all nodes in the tree. For a given tree depth height returns the same value. But for individual nodes we might get different results.
+* **SKEW TREES:**
 
 * **Ordered Tree:** one in which the children of each node are ordered.
 * **Binary tree:** Ordered tree will all nodes having at most 2 children.
