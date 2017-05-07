@@ -17,7 +17,7 @@ Tree is used for storing data of hierarchical nature. It is a non linear data st
 * **DEPTH:** length of the path from the root to the node(Depth of F == 2, B == 1, A == 0)
 * **HEIGHT OF NODE:** length of path from that node to the deepest node.
 * **HEIGHT OF THE TREE:** the maximum height among all nodes in the tree and depth of the tree is the maximum depth among all nodes in the tree. For a given tree depth height returns the same value. But for individual nodes we might get different results.
-* **SKEW TREES:**
+* **SKEW TREES:** If every node in a tree has only one child, then it is a skewed tree. If every node only has left nodes then it is left skewed tree and if it is only right nodes then, it is right skewed tree.
 
 * **Ordered Tree:** one in which the children of each node are ordered.
 * **Binary tree:** Ordered tree will all nodes having at most 2 children.
