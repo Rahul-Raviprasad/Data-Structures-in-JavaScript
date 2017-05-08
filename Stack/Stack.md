@@ -10,9 +10,9 @@ cannot be accessed. To get the element at the top of the stack, you need to
 dispose of all the elements on top of it.
 
 ## Most common operations on stacks are:
-push: adding to stack
-pop: removing from stack
-peek: viewing the top element in the stack.
+* **push:** adding to stack
+* **pop:** removing from stack
+* **peek:** viewing the top element in the stack.
 
 ## When to use the Stack?
 
@@ -193,7 +193,7 @@ Another very common use of recursion is to validate or parse some type of data. 
 
 ## Few Stack Applications
 #### Direct Applications
-1.  Balancing of symbols
+1. Balancing of symbols
 2. infix to postfix conversion
 3. Evaluation of post fix expression
 4. Implementing Function Calls including recursion
