@@ -4,10 +4,10 @@ A queue is a type of List where data are inserted at the end and are removed fro
 
 ### Queue operations
 The 2 primary operations of queue are
-enqueue: insert element at the end and
-dequeue: remove element from the front.
+* **enqueue:** insert element at the end and
+* **dequeue:** remove element from the front.
 peek: returns the element in the front.
 
-Application:
+### Application:
 simulation
 in radix sort
