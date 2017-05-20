@@ -61,11 +61,11 @@ In the case of a directed graph, the edges would be an ordered pair, where the o
 * **EDGE:** An edge is said to be incident on 2 vertices
 * What is the sum of the degrees of all vertices?
 * Twice the number of edges, since adjacent vertices each count the adjoining edge, it will be counted twice
-* Path: sequence of vertices v1, v2, ...vk such that consecutive vertices vi and vi+1 are adjacent.
-* Simple Path: no repeated vertices
-* Cycle: simple path, except that the last vertex is the same as the first vertex.
-* Connected graph: any two vertices are connected by some path
-* Subgraph: subset of vertices and edges forming a graph
+* **Path:** sequence of vertices v1, v2, ...vk such that consecutive vertices vi and vi+1 are adjacent.
+* **Simple Path:** no repeated vertices
+* **Cycle:** simple path, except that the last vertex is the same as the first vertex.
+* **Connected graph:** any two vertices are connected by some path
+* **Subgraph:** subset of vertices and edges forming a graph
 * connected component: maximal connected subgraph.
 * (free) tree: connected graph without cycles.
 * forest - collection of trees.
