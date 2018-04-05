@@ -1,6 +1,8 @@
 ## Arrays
 Arrays are the most commonly used data structure in JS.
 
+--------
+
 ### Difference between Arrays in other programming languages and JavaScript
 In most programming languages Arrays are inbuilt and they are a linear collection of elements. That is they occupy adjacent memory blocks(contiguous memory locations).
 Which makes their lookup very fast, so they are considered good choices for many storage purposes.
