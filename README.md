@@ -1,5 +1,5 @@
 # Data-Structures-in-JavaScript
-Data Structures in JavaScript, How to use them with comment explanations, examples and usages.
+Data Structures in JavaScript, How to use them with comment, explanations, examples and usages.
 
 The content present here are taken from many places and my learnings of the past few years in the Industry.
 But I would to like to point to few resources(there are many more but these are ones I mostly followed)
