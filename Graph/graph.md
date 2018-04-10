@@ -34,17 +34,11 @@ In graph theory and computer science, an adjacency list is a collection of unord
 
 A graph like this
 
-a ------- b
-|  \      |
-|   \     |
-|    c    |
-|   /  \  |
-|  /    \ |
-d ------- e
+![graph](https://github.com/Rahul-Raviprasad/Data-Structures-in-JavaScript/blob/master/Graph/graph.png "Graph Data Structure")
 
 can be represented as following
-V = {a, b, c, d, e}
-E = {(a,b), (a,c), (a,d), (b,e), (c,d), (c,e),(d,e)}
+V = {a, b, c, d, e, f, g}
+E = {(a,b), (b,c), (b,d), (b,e), (c,e), (d,e), (e,f), (g,d)}
 
 ## Applications
 1. Electronic circuits
