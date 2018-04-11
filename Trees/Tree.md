@@ -100,3 +100,27 @@ Unbounded Tree:
 Parent: UnboundedTree
 firstChild: UnboundedTree: Allows you to access the other siblings through a linkedList
 RightChild: UnboundedTree
+
+## Tree Traversals
+Depth First Traversals:
+1. Inorder (Left, Root, Right)
+2. Preorder (Root, Left, Right)
+3. Postorder (Left, Right, Root)
+
+Breadth First or Level Order Traversal
+
+#### Inorder traversal
+   1. Traverse the left subtree, i.e., call Inorder(left-subtree)
+   2. Visit the root.
+   3. Traverse the right subtree, i.e., call Inorder(right-subtree)
+   
+#### Preorder traversal
+   1. Visit the root.
+   2. Traverse the left subtree, i.e., call Preorder(left-subtree)
+   3. Traverse the right subtree, i.e., call Preorder(right-subtree) 
+   
+#### Postorder traversal
+   1. Traverse the left subtree, i.e., call Postorder(left-subtree)
+   2. Traverse the right subtree, i.e., call Postorder(right-subtree)
+   3. Visit the root.
+   
