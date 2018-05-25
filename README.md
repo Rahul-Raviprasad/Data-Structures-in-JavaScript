@@ -4,6 +4,13 @@ Data Structures in JavaScript, How to use them with comment, explanations, examp
 The content present here are taken from many places and my learnings of the past few years in the Industry.
 But I would to like to point to few resources(there are many more but these are ones I mostly followed)
 
+## Asymptotic analysis
+
+Big O analysis gives us an idea of how much our code takes as we increase the input size.
+
+
+## Further Readings
+
 I highly recommend this book **[Data Structures and Algorithms Using Java‐ Script by Michael McMillian (O’Reilly). Copyright 2014 Michael McMillan][1]**
 
 [1]: http://shop.oreilly.com/product/0636920029557.do "DSA"
