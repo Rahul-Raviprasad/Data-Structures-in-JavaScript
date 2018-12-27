@@ -9,6 +9,9 @@ The hashtable data structure is designed around an array and it also has key val
 
 The last thing we have to determine when creating a hash function is how large an array to create for the hash table. One constraint usually placed on the array size is that it should be a prime number.
 
+## Best post on Hashtable for layman
+https://stackoverflow.com/questions/730620/how-does-a-hash-table-work
+
 ## Choosing a hash function
 
 The choice of the hash function depends on the data type of the key. If your key is an integer, then the simplest hash function is to return the key modulo the size of the array. There are circumstances when this function is not recommended, such as when the keys all end in 0 and the array size is 10. This is one reason the array size should be a prime number such as 137.
@@ -58,3 +61,5 @@ A second technique for handling collisions is called linear probing. Linear prob
 - string commonalities
 - file /dir synchronization
 - cryptography
+
+
